@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix DSA Case Studies</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+     background: linear-gradient(90deg, #000000, #ae0710, #de1620, #230002);
+color: white;
+
+color: white;
+
+      padding: 1rem 2rem;
+      text-align: center;
+      height: 200px;
+      align-content: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .info-box {
+      background-color: #1f1f1f;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-left: 5px solid #e50914;
+      max-width: 1000px;
+      margin-top: 1.5rem;
+      border-radius: 10px;
+    }
+    .info-box p {
+      margin: 0.3rem 0;
+      line-height: 1.6;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 2000px;
+      margin: auto;
+    }
+    .usecase {
+      background-color: #1f1f1f;
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      border-left: 5px solid #e50914;
+    }
+    .usecase h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #e50914;
+    }
+    .usecase p {
+      margin: 0.5rem 0 0;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+     table {
+      border-collapse: collapse;
+      text-align: center;
+      position: relative;
+      
+    }
+    th {
+      background-color: #f2f2f2;
+      color: #0f0f0f;
+    }
+    td, th {
+      padding: 10px 15px;
+    }
+   #image {
+    width: 60%;
+   
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    border-radius: 10px;
+    height: 50px;
+    width: 95px;
+
+    display: block;
+    margin: 0 auto;
+
+
+
+    cursor: pointer;
+    border: 2px white solid;
+     background: linear-gradient(90deg, purple, blue, indigo);
+
+     font-weight: bolder;
+color: white;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Netflix DSA Case Studies</h1>
+  </header>
+
+  <div class="info-box">
+    
+    <p><strong>Course Name:</strong> Algorithmic Problem Solving</p>
+   
+    <p><strong>Name:</strong>  C Prateek</p>
+    <p><strong>SRN:</strong> 01fe22bcs292</p>
+    <p><strong>Course Instructor:</strong> Prakash Hegade</p>
+    <p><strong>University:</strong> KLE Technological University, Hubballi-31</p>
+    <p><strong>Portfolio Topic/Domain: </strong>  <strong style="color:red">Netflix</strong></p>
+  </div>
+
+  <div class="info-box">
+  <p><strong>Note:</strong></p>
+  <p>This page hosts:</p>
+  <ul style="margin-left: 1rem;">
+    <li>Introduction</li>
+    <li>Why Netflix</li>
+    <li>Objectives</li>
+    <li>Business Cases</li>
+    <li>References</li>
+  </ul>
+</div>
+
+
+
+<div class="info-box">
+  
+  <h2 style="color: #e50914;">Introduction</h2>
+  <p>These days, streaming is not just about watching movies or shows—it’s about getting a smooth and personal experience. Netflix is one of the most popular platforms that does this very well. For most users, it feels simple and fast. But behind the scenes, Netflix uses smart systems that work with a huge amount of data and make decisions quickly for millions of users.</p>
+
+  <p>When we open Netflix, we see things like a homepage with shows we might like, fast search results, and the next episode playing without delay. As computer science students, we know that these things don’t happen by chance. They are made possible because of data structures and algorithms that help Netflix work faster and smarter.</p>
+
+    <img src="https://i.pinimg.com/originals/57/28/ae/5728aef13f51223982c0b8f9d71c0aba.gif" alt="Illustration of KMP in action" width="300" id="image">
+
+
+  <p>The aim of this project is to understand how Netflix uses these computer science concepts in real life. This portfolio shows how DSA (Data Structures and Algorithms) helps solve actual problems in the system—like what to suggest next or how to sort the most-watched shows. Learning about this helps us connect what we study in class to how it’s really used in the world around us.</p>
+
+
+
+<h2 style="color: #e50914;">Why Portfolio</h2>
+  <p>One of the biggest problems students face while learning DSA is not knowing where these concepts are actually used. We solve coding questions and learn different techniques, but sometimes it’s hard to see how this connects to real-life problems that companies deal with. This portfolio is made to bridge that gap by choosing something familiar—Netflix—and using it to understand how DSA is used in real systems.</p>
+
+  <p>Netflix is a great example because it depends a lot on fast and smart systems. It recommends shows, keeps track of what we’ve watched, and sorts thousands of titles quickly. To make all of this work smoothly, it uses data structures and algorithms in the background. By taking Netflix as a case study, this portfolio helps us see how what we learn in class is actually used to solve problems in the real world.</p>
+
+  <p>This is not just a class assignment—it’s also a personal way to understand DSA better. It helped me enjoy the subject more and look at it from a practical point of view. I also hope this portfolio becomes a useful piece of work I can share in future interviews, projects, or when I want to explain how I apply what I learn.</p>
+
+
+  
+
+<h2 style="color: #e50914;">Objectives</h2>
+  <ul style="margin-left: 1rem;">
+    <li>To apply important data structures and algorithms to make Netflix’s systems faster and more efficient.</li>
+    <li>To understand how different features on Netflix are built using algorithmic solutions and design methods.</li>
+    <li>To study and explain how Netflix handles problems like search, recommendations, and content sorting using smart algorithms.</li>
+    <li>To build a useful and practical project that connects technical skills with real-world applications, making learning more meaningful.</li>
+  </ul>
+
+</div>
+
+<div class="info-box">
+
+
+
+<strong>Business Use cases : </strong>
+
+<div class="usecase">
+  <h2>1. Autocomplete in Search Bar</h2>
+  <p><strong>Use Case:</strong> Netflix gives quick and smart search suggestions as users start typing a title.</p>
+  <p><strong>DSA Applied:</strong> Trie (Prefix Tree)</p>
+  <p>A Trie, also called a prefix tree, is a special type of tree used to store a list of words. It works really well when we need to find words that start with the same beginning letters, like in autocomplete or spell check. At Netflix, when a user types each letter in the search bar, the system follows a path in the trie from the starting point. Each part of the trie stands for one letter, and the full path shows the start of one or more titles. This helps Netflix show matching movie or show titles right away. It makes search faster, saves typing, and helps users quickly find what they want.</p>
+  <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Ik2slOzGj9fS5FCgIZ9cDg.jpeg" alt="Description of image" width="300" id="image">
+
+
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*Oy-1OaT5VJ9GFYSoRsIHYg.gif" alt="Description of image" width="300" id="image">
+
+  
+  <p><strong>Algorithms, Design Techniques, Performance Analysis:</strong></p>
+  <ul>
+    <li><strong>Trie:</strong> This structure is built to find words by their starting letters. Each node in the trie can have many child nodes (one for each possible letter). A flag is used at each node to mark if it ends a full word or title.</li>
+    <li><strong>Time Complexity:</strong> O(k), where k is the number of letters typed. The system just goes one level deeper in the trie for each letter, so it’s very fast. This is better than checking in a list or array where it takes longer.</li>
+    <li><strong>Space Complexity:</strong> O(N × Lavg), where N is the number of titles and Lavg is the average length of those titles. If many titles have different starting letters, the trie uses more space since more nodes are needed.</li>
+  </ul>
+  
+ <button onclick="toggleCode()">Show Code</button>
+
+  <div id="1" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Trie Implementation
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+// Trie Node
+class TrieNode {
+public:
+    bool isEnd; // Indicates end of a word
+    unordered_map<char, TrieNode*> children;
+
+    TrieNode() {
+        isEnd = false;
+    }
+};
+
+// Trie Class
+class Trie {
+private:
+    TrieNode* root;
+
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+
+    // Insert a word into the trie
+    void insert(const string& word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (!node->children.count(c))
+                node->children[c] = new TrieNode();
+            node = node->children[c];
+        }
+        node->isEnd = true;
+    }
+
+    // Search for a complete word
+    bool search(const string& word) {
+        TrieNode* node = root;
+        for (char c : word) {
+            if (!node->children.count(c))
+                return false;
+            node = node->children[c];
+        }
+        return node->isEnd;
+    }
+
+    // Check if any word starts with the given prefix
+    bool startsWith(const string& prefix) {
+        TrieNode* node = root;
+        for (char c : prefix) {
+            if (!node->children.count(c))
+                return false;
+            node = node->children[c];
+        }
+        return true;
+    }
+};
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode() {
+      const codeDiv = document.getElementById("1");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+
+  
+</div>
+
+
+<div class="usecase">
+  <h2>2. Top Trending Shows</h2>
+  <p><strong>Use Case:</strong> Display the top N trending shows based on how many times they are viewed.</p>
+  <p><strong>DSA Applied:</strong> Max-Heap / Priority Queue</p>
+  <p>To show the most-watched shows at any moment, Netflix needs a way to quickly find and update the shows with the highest view counts. A Max-Heap (a type of Priority Queue) is a good choice for this. In a Max-Heap, the show with the highest view count is always at the top. When more people watch a show, its view count goes up, and the heap rearranges itself to keep the most-watched show at the top. These updates are done using fast heap operations like "heapify" or "increase-key". This way, Netflix can quickly show the top N trending shows without checking and sorting all shows every time. It keeps the list up-to-date and accurate in real time.</p>
+  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif?20060826025840" alt="Description of image" width="300" id="image">
+
+    <img src="https://deen3evddmddt.cloudfront.net/uploads/content-images/what-is-priority-queue.webp" alt="Description of image" width="300" id="image">
+
+  <p><strong>Algorithms, Design Techniques, Performance Analysis:</strong></p>
+  <ul>
+    <li><strong>Heap:</strong> A Max-Heap is used to keep track of the most-viewed shows. It is a tree-like structure where each parent has a higher or equal view count than its children.</li>
+    <li><strong>Time Complexity:</strong>
+      <ul>
+        <li>O(log N) for inserting or updating a show's view count. This is because the show might need to move up or down the heap to keep the right order.</li>
+        <li>O(1) to get the top trending show, since it's always at the top of the heap.</li>
+      </ul>
+    </li>
+    <li><strong>Space Complexity:</strong> O(N), where N is the number of shows in the heap. This is because the heap keeps all the shows that are being tracked.</li>
+  </ul>
+
+<button onclick="toggleCode2()">Show Code</button>
+
+  <div id="2" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+// TPriority queue and Max heap
+#include <iostream>
+#include <vector>
+#include <queue>
+using namespace std;
+
+// -------------------- Custom Max Heap Implementation --------------------
+class MaxHeap {
+private:
+    vector<int> heap;
+
+    int parent(int i) { return (i - 1) / 2; }
+    int left(int i)   { return 2 * i + 1; }
+    int right(int i)  { return 2 * i + 2; }
+
+    void heapifyUp(int i) {
+        while (i > 0 && heap[parent(i)] < heap[i]) {
+            swap(heap[i], heap[parent(i)]);
+            i = parent(i);
+        }
+    }
+
+    void heapifyDown(int i) {
+        int largest = i;
+        int l = left(i);
+        int r = right(i);
+
+        if (l < heap.size() && heap[l] > heap[largest])
+            largest = l;
+        if (r < heap.size() && heap[r] > heap[largest])
+            largest = r;
+
+        if (largest != i) {
+            swap(heap[i], heap[largest]);
+            heapifyDown(largest);
+        }
+    }
+
+public:
+    void insert(int val) {
+        heap.push_back(val);
+        heapifyUp(heap.size() - 1);
+    }
+
+    int getMax() {
+        if (heap.empty()) throw runtime_error("Heap is empty");
+        return heap[0];
+    }
+
+    int extractMax() {
+        if (heap.empty()) throw runtime_error("Heap is empty");
+        int maxVal = heap[0];
+        heap[0] = heap.back();
+        heap.pop_back();
+        heapifyDown(0);
+        return maxVal;
+    }
+
+    void printHeap() {
+        for (int val : heap)
+            cout << val << " ";
+        cout << endl;
+    }
+};
+
+// -------------------- STL Priority Queue Example --------------------
+void usePriorityQueue() {
+    priority_queue<int> pq; // Max Heap by default
+
+    pq.push(25);
+    pq.push(10);
+    pq.push(30);
+    pq.push(5);
+
+    cout << "\nSTL Priority Queue (Max Heap): ";
+    while (!pq.empty()) {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+    cout << endl;
+}
+
+// -------------------- Main Function --------------------
+int main() {
+    MaxHeap customHeap;
+
+    // Custom MaxHeap
+    customHeap.insert(15);
+    customHeap.insert(40);
+    customHeap.insert(10);
+    customHeap.insert(30);
+
+    cout << "Custom Max Heap: ";
+    customHeap.printHeap();
+
+    cout << "Max element (custom): " << customHeap.getMax() << endl;
+    cout << "Extract Max (custom): " << customHeap.extractMax() << endl;
+    cout << "After extraction: ";
+    customHeap.printHeap();
+
+    // STL priority_queue
+    usePriorityQueue();
+
+    return 0;
+}
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode2() {
+      const codeDiv = document.getElementById("2");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+
+</div>
+
+
+<div class="usecase">
+  <h2>3. Content Recommendation Similarity (Edit Distance)</h2>
+  <p><strong>Use Case:</strong> Netflix recommends shows or movies based on similarity between user watch history and available content titles or metadata.</p>
+  <p><strong>DP Type:</strong> Edit Distance (Levenshtein Distance)</p>
+  <p>The Edit Distance dynamic programming approach calculates how similar two strings are by counting the minimum number of operations (insertions, deletions, substitutions) needed to convert one string into another. This helps Netflix recommend content even when users have typos in their search queries or when matching similar titles.</p>
+  
+      <img src="https://i.ytimg.com/vi/aEIhvv5p-V8/maxresdefault.jpg" alt="Description of image" width="300" id="image">
+
+  <p><strong>Why:</strong> It allows flexible and tolerant matching between user input and content, improving recommendation quality and user experience.</p>
+  <p><strong>Example:</strong> If a user searches for "Stranger Things," Netflix can identify and suggest titles like "Stranger Things," "Stranger Things 2," or even catch minor spelling mistakes like "Strenger Things."</p>
+  <p><strong>Time Complexity:</strong> O(m * n), where m and n are the lengths of the two strings being compared.</p>
+  <p><strong>Space Complexity:</strong> O(m * n) for the DP table storing edit distances for substrings.</p>
+
+<button onclick="toggleCode3()">Show Code</button>
+
+  <div id="3" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Edit distance DP
+int editDistance(string word1, string word2) {
+    int m = word1.length();
+    int n = word2.length();
+
+    vector<vector<int>> dp(m + 1, vector<int>(n + 1));
+
+    // Initialize base cases
+    for (int i = 0; i <= m; i++)
+        dp[i][0] = i; // Delete all
+    for (int j = 0; j <= n; j++)
+        dp[0][j] = j; // Insert all
+
+    // Fill the DP table
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
+            if (word1[i - 1] == word2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1]; // No operation
+            } else {
+                dp[i][j] = 1 + min({dp[i - 1][j],     // Delete
+                                   dp[i][j - 1],     // Insert
+                                   dp[i - 1][j - 1]  // Replace
+                                  });
+            }
+        }
+    }
+
+    return dp[m][n];
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode3() {
+      const codeDiv = document.getElementById("3");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+
+
+</div>
+
+
+
+<div class="usecase">
+  <h2>4. Show Sorting by Rating</h2>
+  <p><strong>Use Case:</strong> Display shows ordered by rating, genre, or popularity.</p>
+  <p><strong>DSA Applied:</strong> QuickSort</p>
+  <p>Netflix allows users to browse and filter shows based on various criteria like rating, popularity, genre, or release date. To efficiently handle this sorting across a large catalog of content, the QuickSort algorithm is commonly used for its practical speed and memory efficiency.</p>
+
+  <p><strong>Why this DSA?</strong></p>
+  <p>Sorting is essential whenever Netflix displays a list in a particular order. For example, when a user selects "Top Rated" or "Recently Released," the backend uses QuickSort to quickly sort massive datasets. Its average-case performance is ideal for real-time applications like these.</p>
+
+  <p><strong>Where is it applied?</strong></p>
+  <ul>
+    <li>Home page sections like "Top Rated" or "Trending Now".</li>
+    <li>User-selected filters that involve sorting (e.g., sort by rating or release year).</li>
+    <li>Backend systems managing ranked content or personalized recommendations.</li>
+  </ul>
+
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240926172924/Heap-Sort-Recursive-Illustration.webp" alt="Show sorting visualization" width="300" id="image">
+
+  <p><strong>Algorithms, Design Techniques, Performance Analysis:</strong></p>
+  <ul>
+    <li><strong>QuickSort:</strong> A divide-and-conquer algorithm that selects a pivot and partitions the array around it. Though it's not stable, it's widely used because of its fast average performance and low memory usage.</li>
+
+    <li><strong>Time Complexity:</strong> 
+      <ul>
+        <li>Average case: O(N log N)</li>
+        <li>Worst case: O(N²) (rare with good pivot selection)</li>
+      </ul>
+    </li>
+
+    <li><strong>Space Complexity:</strong>
+      <ul>
+        <li>O(log N) on average for the recursion stack</li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <button onclick="toggleCode4()">Show Code</button>
+
+  <div id="4" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Quick Sort
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Partition function using Lomuto partition scheme
+int partition(vector<int>& arr, int low, int high) {
+    int pivot = arr[high]; // pivot element
+    int i = low - 1;       // index of smaller element
+
+    for (int j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(arr[i], arr[j]); // move smaller to left
+        }
+    }
+
+    swap(arr[i + 1], arr[high]); // place pivot in correct position
+    return i + 1;
+}
+
+// Quick Sort function
+void quickSort(vector<int>& arr, int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high); // pivot index
+
+        quickSort(arr, low, pi - 1);  // Sort left side
+        quickSort(arr, pi + 1, high); // Sort right side
+    }
+}
+
+// Utility function to print the array
+void printArray(const vector<int>& arr) {
+    for (int num : arr)
+        cout << num << " ";
+    cout << endl;
+}
+
+// Main function
+int main() {
+    vector<int> arr = {10, 7, 8, 9, 1, 5};
+
+    cout << "Original array: ";
+    printArray(arr);
+
+    quickSort(arr, 0, arr.size() - 1);
+
+    cout << "Sorted array: ";
+    printArray(arr);
+
+    return 0;
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode4() {
+      const codeDiv = document.getElementById("4");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+</div>
+
+
+
+
+
+
+<div class="usecase">
+  <h2>5. Content Availability</h2>
+  <p><strong>Use Case:</strong> Ensure users can only stream shows licensed in their region and date range.</p>
+  <p><strong>DSA Applied:</strong> Binary Search</p>
+  <p>Netflix needs to verify if a user’s request to stream a show falls within the licensed date range and region for that content. Instead of checking all intervals one by one, Netflix can use Binary Search on a sorted list of license intervals for each region, enabling fast determination of availability. Each country has an array of license periods sorted by start date, and by performing binary search on this list, Netflix can efficiently find if the requested date falls within any licensed interval. This reduces the time needed compared to a simple linear search and improves performance when handling many licensing agreements.</p>
+ 
+ <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240506155201/binnary-search-.webp" alt="Description of image" width="300" id="image">
+  <p><strong>Algorithms, Design Techniques, Performance Analysis:</strong></p>
+  <ul>
+    <li><strong>Binary Search:</strong> This algorithm works on a sorted list of intervals (sorted by start date). It repeatedly divides the search space in half to find the interval where the queried date could fall. Once a candidate interval is found, a simple check confirms whether the date lies within that interval's range. This method is easier to implement than interval trees and works well when intervals don't overlap much.</li>
+    <li><strong>Time Complexity:</strong> O(log N) for searching within the sorted intervals, where N is the number of license intervals for the country.</li>
+    <li><strong>Space Complexity:</strong> O(N) for storing the license intervals.</li>
+  </ul>
+
+  <button onclick="toggleCode5()">Show Code</button>
+
+  <div id="5" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+// Binary Search
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Binary Search function (returns index or -1 if not found)
+int binarySearch(const vector<int>& arr, int target) {
+    int low = 0, high = arr.size() - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == target)
+            return mid;            // Found
+        else if (arr[mid] < target)
+            low = mid + 1;         // Search right
+        else
+            high = mid - 1;        // Search left
+    }
+
+    return -1; // Not found
+}
+
+// Main function
+int main() {
+    vector<int> arr = {1, 3, 5, 7, 9, 11, 15, 18, 20};
+    int target = 11;
+
+    int result = binarySearch(arr, target);
+
+    if (result != -1)
+        cout << "Element found at index: " << result << endl;
+    else
+        cout << "Element not found." << endl;
+
+    return 0;
+}
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode5() {
+      const codeDiv = document.getElementById("5");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+</div>
+
+
+<div class="usecase">
+  <h2>6. Subtitle Moderation</h2>
+  <p><strong>Use Case:</strong> Detect offensive or restricted words in subtitle files.</p>
+  <p><strong>DSA Applied:</strong> Knuth-Morris-Pratt (KMP)</p>
+  <p>To ensure subtitles meet community guidelines and regulatory standards, Netflix needs to detect and remove offensive or restricted words from subtitle files. The Knuth-Morris-Pratt (KMP) algorithm offers an efficient solution for this. It is a linear-time string matching algorithm that helps identify a specific word (pattern) in a given text (subtitle content) without re-checking previously matched characters. This makes KMP ideal for scanning large subtitle files quickly for one word or phrase at a time from a blacklist.</p>
+
+  <img src="https://scaler-topics-articles-md.s3.us-west-2.amazonaws.com/kmp-algorithm-lps-table.gif" alt="Illustration of KMP in action" width="300" id="image">
+
+  <p><strong>KMP Example:</strong> Suppose Netflix wants to detect the word "violence" in the sentence "This show contains scenes of violence and strong language." KMP first preprocesses the pattern "violence" by building a prefix table (LPS array). Then, while scanning the subtitle, it skips unnecessary comparisons by referring to the LPS table whenever a mismatch occurs. This reduces redundant work and speeds up detection.</p>
+
+  <p><strong>Algorithm Design, Techniques, and Analysis:</strong></p>
+  <ul>
+    <li><strong>KMP:</strong> The algorithm preprocesses the pattern to create an LPS (Longest Prefix Suffix) array. This array helps determine the next position to check in the pattern when a mismatch occurs during text scanning, avoiding unnecessary re-evaluation of characters.</li>
+    <li><strong>Time Complexity:</strong> 
+      <ul>
+        <li>Preprocessing (LPS array creation): O(p), where p is the length of the pattern.</li>
+        <li>Text search: O(n), where n is the length of the subtitle text.</li>
+        <li>Total: O(n + p) per pattern.</li>
+      </ul>
+    </li>
+    <li><strong>Space Complexity:</strong> O(p) for storing the LPS array.</li>
+    <li>This approach is best suited when scanning for one pattern at a time. For multiple patterns, KMP can be repeatedly applied per word from the blacklist.</li>
+  </ul>
+
+  <button onclick="toggleCode6()">Show Code</button>
+
+  <div id="6" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // KMP string search
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+// Compute the Longest Prefix Suffix (LPS) array
+vector<int> computeLPSArray(const string& pattern) {
+    int m = pattern.size();
+    vector<int> lps(m, 0);
+
+    int len = 0; // length of the previous longest prefix suffix
+    int i = 1;
+
+    while (i < m) {
+        if (pattern[i] == pattern[len]) {
+            len++;
+            lps[i] = len;
+            i++;
+        } else {
+            if (len != 0) {
+                len = lps[len - 1]; // try shorter prefix
+            } else {
+                lps[i] = 0;
+                i++;
+            }
+        }
+    }
+
+    return lps;
+}
+
+// KMP Search function - returns all indices where pattern is found in text
+vector<int> KMPSearch(const string& text, const string& pattern) {
+    vector<int> result;
+    int n = text.size();
+    int m = pattern.size();
+
+    if (m == 0) return result; // empty pattern
+
+    vector<int> lps = computeLPSArray(pattern);
+
+    int i = 0; // index for text
+    int j = 0; // index for pattern
+
+    while (i < n) {
+        if (text[i] == pattern[j]) {
+            i++;
+            j++;
+        }
+
+        if (j == m) {
+            result.push_back(i - j); // pattern found at i-j
+            j = lps[j - 1];          // continue searching
+        } else if (i < n && text[i] != pattern[j]) {
+            if (j != 0)
+                j = lps[j - 1];
+            else
+                i++;
+        }
+    }
+
+    return result;
+}
+
+// Main function to test KMP
+int main() {
+    string text = "ABABDABACDABABCABAB";
+    string pattern = "ABABCABAB";
+
+    vector<int> matches = KMPSearch(text, pattern);
+
+    if (matches.empty()) {
+        cout << "Pattern not found in the text." << endl;
+    } else {
+        cout << "Pattern found at indices: ";
+        for (int idx : matches)
+            cout << idx << " ";
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode6() {
+      const codeDiv = document.getElementById("6");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+</div>
+
+
+
+
+
+
+
+<div class="usecase">
+  <h2>7. Video Compression (Knapsack Problem) </h2>
+  <p><strong>Use Case:</strong> Optimize video quality and size under bandwidth or storage constraints.</p>
+  <p><strong>DP Type:</strong> 0/1 Knapsack</p>
+  <p>Netflix needs to balance video quality and file size to provide smooth streaming without buffering, especially under limited bandwidth conditions. The 0/1 Knapsack dynamic programming approach helps select the best combination of video frames or compression levels. Each frame or segment can either be kept at high quality or compressed, aiming to maximize overall video quality while staying within size or bandwidth limits.</p>
+  <p><strong>Why:</strong> The problem is similar to the knapsack problem where each video frame has a "value" (quality) and "weight" (size). The goal is to maximize total quality without exceeding the bandwidth cap, which is the knapsack's capacity.</p>
+  
+  
+  <p><strong>Example:</strong> Netflix may choose to keep key scenes at full quality while compressing less important frames to save bandwidth, ensuring the viewer gets the best experience possible within network limits.</p>
+  <p><strong>Time Complexity:</strong> O(n*W), where n is the number of video segments and W is the bandwidth limit.</p>
+  <p><strong>Space Complexity:</strong> O(n*W) for the DP table storing intermediate results.</p>
+
+<button onclick="toggleCode7()">Show Code</button>
+
+  <div id="7" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // 0/1 Knapsack
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Function to solve 0/1 Knapsack using DP
+int knapsackDP(int W, const vector<int>& wt, const vector<int>& val, int n) {
+    vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
+
+    // Build table dp[][] in bottom-up manner
+    for (int i = 1; i <= n; i++) {
+        for (int w = 0; w <= W; w++) {
+            if (wt[i - 1] <= w) {
+                // Include item i or exclude it
+                dp[i][w] = max(
+                    val[i - 1] + dp[i - 1][w - wt[i - 1]], // include
+                    dp[i - 1][w]                           // exclude
+                );
+            } else {
+                dp[i][w] = dp[i - 1][w]; // can't include item i
+            }
+        }
+    }
+
+    return dp[n][W]; // max value that can be obtained
+}
+
+// Main function to test the DP Knapsack
+int main() {
+    vector<int> val = {60, 100, 120};
+    vector<int> wt = {10, 20, 30};
+    int W = 50; // Capacity
+    int n = val.size();
+
+    int maxValue = knapsackDP(W, wt, val, n);
+    cout << "Maximum value in knapsack = " << maxValue << endl;
+
+    return 0;
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode7() {
+      const codeDiv = document.getElementById("7");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show COde";
+      }
+    }
+  </script>
+
+</div>
+
+<div class="usecase">
+  <h2>8. Multi-parameter Filtering</h2>
+  <p><strong>Use Case:</strong> Enable users to filter Netflix content based on multiple parameters like genre, language, year, etc.</p>
+  <p><strong>DSA Applied:</strong> Binary Search Trees (BST), B-trees, and Union-Find algorithm.</p>
+  <p>Netflix stores metadata like genre, language, and year in efficient data structures such as BSTs and B-trees. These allow fast searching and retrieval of content matching user-selected filters. The Union-Find algorithm is used to group and combine similar filters, improving the filtering process by quickly identifying overlapping or related categories.</p>
+  
+
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240418110011/Binary-Search-Tree.webp" alt="Description of image" width="300" id="image">
+  
+  <p><strong>Why:</strong> BSTs and B-trees provide quick sorted access to large metadata, helping to narrow down results efficiently. Union-Find helps merge multiple filters selected by the user into a combined search space without redundant checks.</p>
+  <p><strong>Example:</strong> When a user selects filters like "Action" and "English," BSTs quickly find matching content for each filter, and Union-Find combines these results to display only the titles that satisfy both filters.</p>
+  <p><strong>Time Complexity:</strong> O(log n) for searching in BST/B-trees, where n is the number of content items. Union-Find operations run in near constant time, O(α(n)) (inverse Ackermann function).</p>
+  <p><strong>Space Complexity:</strong> O(n) for storing metadata in BST/B-trees and Union-Find data structures.</p>
+
+<button onclick="toggleCode8()">Show Code</button>
+
+  <div id="8" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // BST
+#include <iostream>
+using namespace std;
+
+// Define a BST node
+struct Node {
+    int key;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        key = val;
+        left = right = nullptr;
+    }
+};
+
+// Insert a key into BST
+Node* insert(Node* root, int key) {
+    if (root == nullptr)
+        return new Node(key);
+    
+    if (key < root->key)
+        root->left = insert(root->left, key);
+    else if (key > root->key)
+        root->right = insert(root->right, key);
+    
+    return root;
+}
+
+// Inorder traversal (Left, Root, Right)
+void inorder(Node* root) {
+    if (root == nullptr) return;
+    inorder(root->left);
+    cout << root->key << " ";
+    inorder(root->right);
+}
+
+// Search for a key
+Node* search(Node* root, int key) {
+    if (root == nullptr || root->key == key)
+        return root;
+    
+    if (key < root->key)
+        return search(root->left, key);
+    else
+        return search(root->right, key);
+}
+
+// Find minimum value node in a tree
+Node* minValueNode(Node* node) {
+    Node* current = node;
+    while (current && current->left != nullptr)
+        current = current->left;
+    return current;
+}
+
+// Delete a key from BST
+Node* deleteNode(Node* root, int key) {
+    if (root == nullptr) return root;
+
+    if (key < root->key)
+        root->left = deleteNode(root->left, key);
+    else if (key > root->key)
+        root->right = deleteNode(root->right, key);
+    else {
+        // Node with one or no child
+        if (root->left == nullptr) {
+            Node* temp = root->right;
+            delete root;
+            return temp;
+        }
+        else if (root->right == nullptr) {
+            Node* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // Node with two children
+        Node* temp = minValueNode(root->right);
+        root->key = temp->key;
+        root->right = deleteNode(root->right, temp->key);
+    }
+
+    return root;
+}
+
+// Main function
+int main() {
+    Node* root = nullptr;
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 70);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 60);
+    insert(root, 80);
+
+    cout << "Inorder traversal of BST: ";
+    inorder(root);
+    cout << endl;
+
+    int key = 60;
+    root = deleteNode(root, key);
+    cout << "After deleting " << key << ": ";
+    inorder(root);
+    cout << endl;
+
+    int find = 40;
+    Node* res = search(root, find);
+    if (res)
+        cout << find << " found in BST." << endl;
+    else
+        cout << find << " not found in BST." << endl;
+
+    return 0;
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode8() {
+      const codeDiv = document.getElementById("8");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+
+</div>
+
+
+
+<div class="usecase">
+  <h2>9. User-Item Bipartite Graph</h2>
+  <p><strong>Use Case:</strong> Netflix models users and movies as two types of nodes in a bipartite graph. Edges represent interactions like user ratings or views.</p>
+  <p><strong>DSA Applied:</strong> Bipartite Graphs and Collaborative Filtering Algorithms</p>
+  <p>Users and movies are connected if a user has watched or rated a movie. By analyzing these connections, Netflix recommends movies to a user based on what similar users have watched or liked. Collaborative filtering algorithms use graph traversal techniques on the bipartite graph to find these connections and suggest relevant content.</p>
+ 
+ 
+   <img src="https://mathbooks.unl.edu/Contemporary/external/bipartite-tricky-colored-moved.png" alt="Description of image" width="300" id="image">
+ 
+  <p><strong>Why:</strong> Bipartite graphs efficiently model relationships between two distinct sets (users and movies), allowing algorithms to find patterns and similarities for personalized recommendations.</p>
+  <p><strong>Example:</strong> If User A and User B have watched many of the same movies, Netflix may recommend to User A the movies that User B has watched but User A hasn’t, using their connection in the bipartite graph.</p>
+  <p><strong>Time Complexity:</strong> Depends on the graph size; typical collaborative filtering involves traversals or matrix factorization which can vary from O(U × M) where U is users and M is movies.</p>
+  <p><strong>Space Complexity:</strong> O(U + M + E) where U is number of users, M is number of movies, and E is number of edges (interactions).</p>
+
+<button onclick="toggleCode9()">Show Code</button>
+
+  <div id="9" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Program: Bipartite Graph-based Movie Recommendation (Users ↔ Movies)
+
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+#include <set>
+using namespace std;
+
+// Recommend movies to a user based on similar users' watched movies
+vector<string> recommendMovies(
+    const unordered_map<string, vector<string>>& userToMovies,
+    const string& targetUser
+) {
+    unordered_set<string> watched(userToMovies.at(targetUser).begin(), userToMovies.at(targetUser).end());
+    unordered_map<string, int> movieScore; // movie → count of similar users who watched
+
+    // For each user
+    for (const auto& [user, movies] : userToMovies) {
+        if (user == targetUser) continue;
+
+        // Check similarity based on common movies
+        int common = 0;
+        for (const string& m : movies) {
+            if (watched.count(m)) common++;
+        }
+
+        // If similar, suggest movies they watched that target hasn't
+        if (common > 0) {
+            for (const string& m : movies) {
+                if (!watched.count(m)) {
+                    movieScore[m]++;
+                }
+            }
+        }
+    }
+
+    // Return movies sorted by frequency
+    vector<string> recommendations;
+    set<pair<int, string>, greater<>> sortedMovies;
+    for (const auto& [movie, score] : movieScore) {
+        sortedMovies.insert({score, movie});
+    }
+    for (const auto& [score, movie] : sortedMovies) {
+        recommendations.push_back(movie);
+    }
+
+    return recommendations;
+}
+
+// Main function
+int main() {
+    // Bipartite structure: User → List of Movies
+    unordered_map<string, vector<string>> userToMovies = {
+        {"U1", {"M1", "M2"}},
+        {"U2", {"M1", "M3"}},
+        {"U3", {"M2", "M4"}},
+        {"U4", {"M1", "M2", "M3"}}
+    };
+
+    string targetUser = "U1";
+    vector<string> recs = recommendMovies(userToMovies, targetUser);
+
+    cout << "Recommended movies for " << targetUser << ": ";
+    if (recs.empty()) {
+        cout << "No recommendations found." << endl;
+    } else {
+        for (const string& m : recs)
+            cout << m << " ";
+        cout << endl;
+    }
+
+    return 0;
+}
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode9() {
+      const codeDiv = document.getElementById("9");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+
+</div>
+
+
+<div class="usecase">
+  <h2>10. Shortest Path for Content Delivery</h2>
+  <p><strong>Use Case:</strong> Optimize delivery routes within Content Delivery Networks (CDNs) to minimize latency and buffering during video streaming.</p>
+  <p><strong>DSA Applied:</strong> Graphs, Dijkstra’s Algorithm</p>
+  <p>Netflix models its network of globally distributed servers as a graph, where each node represents a server or data center and edges represent the communication links between them. Each edge has a weight indicating metrics like latency, bandwidth, or load. To ensure smooth and fast video delivery, Netflix uses Dijkstra’s Algorithm to compute the shortest path from the source server (holding the content) to the user's device.</p>
+
+  <img src="https://ds055uzetaobb.cloudfront.net/brioche/uploads/lessons/dijkstra-EQ50NN.gif" alt="Graph-based routing with Dijkstra's algorithm" width="300" id="image">
+
+  <p><strong>Why:</strong> Dijkstra’s algorithm helps find the path with the lowest overall latency or cost. This reduces buffering, prevents congestion, and ensures users receive high-quality streams in real-time, even under varying network conditions.</p>
+
+  <p><strong>Example:</strong> Suppose a user in India wants to stream a movie. Netflix uses Dijkstra’s algorithm to compute the shortest (fastest) path from the nearest edge server—say in Mumbai or Singapore—to the user's device. If certain nodes or links are slow due to congestion, the algorithm recalculates the optimal alternative route with minimal total delay.</p>
+
+  <p><strong>Algorithm Details and Analysis:</strong></p>
+  <ul>
+    <li><strong>Dijkstra’s Algorithm:</strong> Uses a priority queue (min-heap) to always expand the node with the lowest known distance from the source. It updates the shortest distances for all reachable nodes by comparing current paths and choosing the minimal one.</li>
+    <li><strong>Time Complexity:</strong> O(E + V log V), where V is the number of nodes (servers) and E is the number of edges (network links), assuming a min-priority queue is used.</li>
+    <li><strong>Space Complexity:</strong> O(V) for storing distances and predecessor information to reconstruct the shortest path.</li>
+  </ul>
+
+
+  <button onclick="toggleCode10()">Show Code</button>
+
+  <div id="10" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Program: Dijkstra's Algorithm using Min Heap (Priority Queue)
+
+#include <iostream>
+#include <vector>
+#include <queue>
+using namespace std;
+
+const int INF = 1e9; // Infinity (large value)
+
+typedef pair<int, int> pii; // (distance, node)
+
+// Dijkstra’s Algorithm from source node
+vector<int> dijkstra(int V, vector<vector<pii>>& adj, int source) {
+    vector<int> dist(V, INF);
+    dist[source] = 0;
+
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
+    pq.push({0, source}); // (distance, node)
+
+    while (!pq.empty()) {
+        int d = pq.top().first;
+        int u = pq.top().second;
+        pq.pop();
+
+        if (d > dist[u]) continue; // outdated pair
+
+        for (auto& edge : adj[u]) {
+            int v = edge.first;
+            int w = edge.second;
+
+            if (dist[u] + w < dist[v]) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    return dist;
+}
+
+// Main function
+int main() {
+    int V = 5; // number of vertices
+    vector<vector<pii>> adj(V);
+
+    // Add edges: adj[u].push_back({v, weight});
+    adj[0].push_back({1, 10});
+    adj[0].push_back({4, 5});
+    adj[1].push_back({2, 1});
+    adj[1].push_back({4, 2});
+    adj[2].push_back({3, 4});
+    adj[3].push_back({2, 6});
+    adj[3].push_back({0, 7});
+    adj[4].push_back({1, 3});
+    adj[4].push_back({2, 9});
+    adj[4].push_back({3, 2});
+
+    int source = 0;
+    vector<int> distances = dijkstra(V, adj, source);
+
+    cout << "Shortest distances from source node " << source << ":\n";
+    for (int i = 0; i < V; i++) {
+        cout << "To node " << i << " = ";
+        if (distances[i] == INF)
+            cout << "INF\n";
+        else
+            cout << distances[i] << "\n";
+    }
+
+    return 0;
+}
+
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode10() {
+      const codeDiv = document.getElementById("10");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+</div>
+ 
+
+<div class="usecase">
+  <h2>11. Dynamic Pricing / Plan Optimization</h2>
+  <p><strong>Use Case:</strong> Recommend subscription plans based on user behavior, devices, and usage.</p>
+  <p><strong>DSA Applied:</strong> Greedy Algorithm</p>
+  <p>Netflix analyzes user data like viewing hours, device count, and content preferences to suggest the most cost-effective subscription plan. A greedy algorithm selects the best available plan at each step based on maximum immediate benefit to the user.</p>
+
+  <p><strong>Why this DSA?</strong></p>
+  <p>Greedy algorithms are efficient in making real-time decisions by choosing the optimal solution at every step without reconsidering previous choices, which fits well for pricing recommendations.</p>
+
+  <p><strong>Where is it applied?</strong></p>
+  <ul>
+    <li>Plan suggestions during signup or account upgrade.</li>
+    <li>Personalized plan offers based on usage trends.</li>
+    <li>Backend systems optimizing pricing strategies.</li>
+  </ul>
+
+  <p><strong>Algorithm Design, Techniques, and Analysis:</strong></p>
+  <ul>
+    <li><strong>Greedy Strategy:</strong> Select the most cost-beneficial plan at each step based on user profile.</li>
+    <li><strong>Time Complexity:</strong> O(n log n) for sorting plans by benefit ratio.</li>
+    <li><strong>Space Complexity:</strong> O(n) depending on the number of available plans.</li>
+  </ul>
+
+  <button onclick="toggleCode11()">Show Code</button>
+
+  <div id="11" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+// Program: Greedy Plan Selector based on Cost-Benefit Ratio
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Plan {
+    string name;
+    int cost;
+    int benefit;
+
+    // Compute benefit-to-cost ratio
+    double ratio() const {
+        return (double)benefit / cost;
+    }
+};
+
+// Greedy selection of plans
+vector<Plan> selectPlans(vector<Plan>& plans, int budget) {
+    // Sort plans by descending benefit/cost ratio
+    sort(plans.begin(), plans.end(), [](const Plan& a, const Plan& b) {
+        return a.ratio() > b.ratio();
+    });
+
+    vector<Plan> selected;
+    for (const auto& plan : plans) {
+        if (budget >= plan.cost) {
+            selected.push_back(plan);
+            budget -= plan.cost;
+        }
+    }
+    return selected;
+}
+
+int main() {
+    // List of available plans
+    vector<Plan> plans = {
+        {"Premium Plan", 100, 250},
+        {"Basic Plan", 50, 90},
+        {"Silver Plan", 70, 150},
+        {"Gold Plan", 120, 220},
+        {"Student Plan", 40, 70}
+    };
+
+    int userBudget = 150;
+
+    vector<Plan> chosen = selectPlans(plans, userBudget);
+
+    cout << "Selected Plans within budget " << userBudget << ":\n";
+    for (const auto& plan : chosen) {
+        cout << "- " << plan.name << " (Cost: " << plan.cost
+             << ", Benefit: " << plan.benefit << ", Ratio: " << plan.ratio() << ")\n";
+    }
+
+    return 0;
+}
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode11() {
+      const codeDiv = document.getElementById("11");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide COde";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show Code";
+      }
+    }
+  </script>
+</div>
+
+
+<div class="usecase">
+  <h2>12. Server Load Balancing</h2>
+  <p><strong>Use Case:</strong> Distribute traffic to servers efficiently during peak streaming hours.</p>
+  <p><strong>DSA Applied:</strong> Heap / Priority Queue, Hashing</p>
+  <p>During high traffic, Netflix must assign users to servers without delay. A min-heap (priority queue) helps keep track of the least-loaded server, and hashing ensures users consistently connect to the same server to improve caching efficiency.</p>
+
+  <p><strong>Why this DSA?</strong></p>
+  <p>Heaps allow quick access to the server with the lowest load. Hashing enables consistent and efficient mapping of users to servers, which improves reliability and reduces data duplication.</p>
+
+  <p><strong>Where is it applied?</strong></p>
+  <ul>
+    <li>Real-time video streaming requests.</li>
+    <li>Backend traffic routing systems.</li>
+    <li>Global content delivery network (CDN) balancing.</li>
+  </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif?20060826025840" alt="Description of image" width="300" id="image">
+
+  <p><strong>Algorithm Design, Techniques, and Analysis:</strong></p>
+  <ul>
+    <li><strong>Min-Heap:</strong> Stores servers by current load, returns least-loaded one in O(1).</li>
+    <li><strong>Hash Map:</strong> Maps users to specific servers for session consistency.</li>
+    <li><strong>Time Complexity:</strong> O(log n) for heap insertion/extraction, O(1) for hashing.</li>
+    <li><strong>Space Complexity:</strong> O(n) for storing server loads and mappings.</li>
+  </ul>
+
+
+  <button onclick="toggleCode12()">Show Code</button>
+
+  <div id="12" style="display:none; margin-top: 10px; background: #000000; padding: 10px; border-radius: 6px;">
+    <pre><code>
+        // Program: Demonstrating Priority Queue using Max-Heap and Min-Heap
+
+#include <iostream>
+#include <queue>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    // Max-Heap (default)
+    priority_queue<int> maxHeap;
+
+    maxHeap.push(30);
+    maxHeap.push(10);
+    maxHeap.push(50);
+    maxHeap.push(40);
+
+    cout << "Max-Heap (Priority Queue - Highest Priority First):\n";
+    while (!maxHeap.empty()) {
+        cout << maxHeap.top() << " ";
+        maxHeap.pop();
+    }
+    cout << "\n";
+
+    // Min-Heap using greater<int>
+    priority_queue<int, vector<int>, greater<int>> minHeap;
+
+    minHeap.push(30);
+    minHeap.push(10);
+    minHeap.push(50);
+    minHeap.push(40);
+
+    cout << "Min-Heap (Priority Queue - Lowest Priority First):\n";
+    while (!minHeap.empty()) {
+        cout << minHeap.top() << " ";
+        minHeap.pop();
+    }
+
+    return 0;
+}
+
+
+
+    </code></pre>
+  </div>
+
+  <script>
+    function toggleCode12() {
+      const codeDiv = document.getElementById("12");
+      const button = event.target;
+      if (codeDiv.style.display === "none") {
+        codeDiv.style.display = "block";
+        button.textContent = "Hide Code";
+      } else {
+        codeDiv.style.display = "none";
+        button.textContent = "Show COde";
+      }
+    }
+  </script>
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="info-box">
+    <h2 style="color: #e50914;">References</h2>
+
+<ol>
+  <li>
+    <em>Heap Data Structure</em>, TutorialsPoint.  
+    <a href="https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    <em>Quicksort Algorithm</em>, Brilliant.org.  
+    <a href="https://brilliant.org/wiki/quicksort/" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    Knuth, D. E. (1998). <em>The Art of Computer Programming, Volume 3: Sorting and Searching</em> (2nd ed.). Addison-Wesley.  
+    <a href="https://www-cs-faculty.stanford.edu/~knuth/taocp.html" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    Knuth, D. E., Morris, J. H., & Pratt, V. R. (1977). "Fast pattern matching in strings." <em>SIAM Journal on Computing</em>, 6(2), 323–350.  
+    <a href="https://epubs.siam.org/doi/10.1137/0206024" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    <em>Knapsack Problem</em>, Stanford University Lecture Notes.  
+    <a href="https://web.stanford.edu/class/archive/cs/cs161/cs161.1168/lectures/12/Slides12.pdf" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  
+  <li>
+    Sedgewick, R. (1998). <em>Algorithms in C++</em>, Parts 1-4. Addison-Wesley.  
+    <a href="https://www.cs.princeton.edu/~rs/AlgsInC.html" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    <em>Graph Bipartiteness</em>, Brilliant.org.  
+    <a href="https://brilliant.org/wiki/bipartite-graph/" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    <em>Binary Search</em>, Wikipedia.  
+    <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+
+  <li>
+    Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). <em>Introduction to Algorithms</em> (3rd ed.). MIT Press.  
+    <a href="https://mitpress.mit.edu/9780262033848/introduction-to-algorithms/" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+  <li>
+    <em>Trie Data Structure</em>, GeeksforGeeks.  
+    <a href="https://www.geeksforgeeks.org/trie-insert-and-search/" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+ 
+
+  <li>
+    <em>Dijkstra's Algorithm</em>, Wikipedia.  
+    <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank" rel="noopener noreferrer">visit</a>
+  </li>
+</ol>
+</div>
+
+
+
+
+  
+</body>
+</html>

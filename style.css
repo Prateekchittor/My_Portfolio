@@ -1,0 +1,348 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0c10;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  /* Particles Background */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    background: #0b0c10ee;
+    padding: 1rem 2rem;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00ffd5;
+    text-shadow: 0 0 15px #00ffd5;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    position: relative;
+    font-weight: 500;
+  }
+  .nav-links a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background: #00ffd5;
+    transition: 0.3s;
+  }
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+  }
+  .highlight {
+    color: #00ffd5;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #00ffd5;
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #00ffd5;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #00ffd5;
+  }
+  
+  /* Sections */
+  .section {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .skills-list li {
+    padding: 0.7rem 1.5rem;
+    background: #1c1c1c;
+    color: #00ffd5;
+    border: 1px solid #00ffd5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00ffd5;
+    transition: transform 0.3s;
+  }
+  .skills-list li:hover {
+    transform: scale(1.1);
+    background: #00ffd5;
+    color: #000;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .project-card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #00ffd5;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00ffd5;
+  }
+  
+ /* Add styles for the new contact icons */
+.contact-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .contact-icons a {
+    font-size: 2.5rem;
+    color: #00ffd5;
+    transition: color 0.3s;
+  }
+  
+  .contact-icons a:hover {
+    color: #00c9a7;
+  }
+  
+  
+  .footer-icons a {
+    color: #00ffd5;
+    font-size: 2.5rem; /* Larger icon size */
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #00c9a7;
+  }
+
+  /* Animations */
+  .fade-up, .zoom-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+  }
+  .zoom-in {
+    transform: scale(0.9);
+  }
+  .fade-up.revealed, .zoom-in.revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Business Use Case Section */
+;
+ 
+  
+
+  
+  
+  /* Business Use Cases Section */
+.business-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .business-case-box {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #00ffd5;
+  }
+  
+  .business-case-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00ffd5;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .business-case-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .business-case-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+  
+  /* Chosen Domain Section */
+#chosen-domain {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  #chosen-domain h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .domain-card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #00ffd5;
+  }
+  
+  .domain-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00ffd5;
+  }
+  
+  .domain-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .domain-card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  #dd{
+    height: 100px;
+    width: 500px;
+
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+
+    cursor: pointer;
+     text-align: center;
+
+
+  }
+  #pp{
+    cursor: pointer;
+  }
+
+  .hero {
+    text-align: center;   /* center all content */
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 3px solid #00ffd5;
+    box-shadow: 0 0 25px #00ffd5;   /* CYAN GLOW */
+}
+
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* fill circle properly */
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;   /* <-- THIS FIXES THE ALIGNMENT */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.hero-buttons {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.same-btn {
+    width: 220px;                 /* same size for both buttons */
+    text-align: center;           /* centers text inside */
+}
+
+
